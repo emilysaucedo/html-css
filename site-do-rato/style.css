@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@font-face {
+    font-family: 'projeto';
+    src: url(Poppins/Poppins-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+
+:root {
+    --cor0:#96CDFA;
+    --cor1:#439AE0;
+    --cor2:#3477AD;
+    --cor3:#2D4961;
+    --cor4:#1D4261;
+    --cor5:#E0A343;   
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; 
+    --fonte-destaque:'Bebas Neue',cursive;
+    --fonte-3: 'projeto', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1)); /*degradê*/
+    min-height: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > p {
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px; /*não usar %*/
+    display: block;
+    margin: auto;
+}
+
+
+body {
+    font-family: var(--fonte-3);
+    background-color: var(--cor0);
+}
+
+header a {
+        text-decoration: none;
+        color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+header a {
+    background-color: var(--cor2);
+    padding: 2px;
+    text-align: center;
+}
+
+header > h1 {
+    
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;    
+}
+
+
+.subtitulo {
+    background-color: var(--cor2);
+    padding: 2px;
+    border-radius: 2px;
+
+}
+
+p {
+    
+    text-align: justify;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);   
+    padding: 10px; 
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8em;
+    background-color:var(--cor4);
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
